@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@200;300;400&family=Noto+Serif:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+  <div class="main">
+    <input type="checkbox" name="" id="chk" aria-hidden="true">
+    <div class="sign-up">
+      <form>
+        <label for="chk" aria-hidden="true">Sign up</label>
+
+        <div>
+          <input id="signName" type="text" name="text" placeholder="User name" required="">
+          <p id="usernameAlert" class="d-none">your name must be at least 3 letters</p>  
+        </div>
+
+        <div>
+          <input id="signEmail" type="email" name="email" placeholder="Email" required="">
+          <p id="userEmailAlert" class="d-none">name@example.com</p>
+        </div>
+   
+        <div>
+          <input id="signPass" type="password" name="psw" placeholder="Password" required="">
+          <p id="userPasswordAlert" class="d-none">your password must be 5 to 15 characters</p>
+        </div>
+      
+        <button onclick="addSignUp()" class="btn">Sign up</button>
+        <p id="confirmMsg" class="text-success text-center d-none fw-bold">Success<i class="fa-solid fa-circle-check ms-1 text-success"></i></p>
+        <p id="existMsg" class="text-danger text-center d-none  fw-bold "><i class=" me-1 fa-solid text-danger fa-circle-exclamation"></i>This account is Exist!</p>
+        <p id="tryAgainMsg" class="text-danger text-center d-none  fw-bold mt-3"><i class="me-1 fa-solid fa-circle-exclamation"></i>Sign up Failed, try again!</p>
+      </form>
+    </div>
+
+    
+    <div class="login">
+      <form>
+        <label for="chk" aria-hidden="true">Login</label>
+        <div id="loginPage" class="">
+        <input id="loginEmail" type="email" name="email" placeholder="Email" required="">
+        <input id="loginPass" type="password" name="psw" placeholder="Password" required="">
+        <div id="message2"></div>
+        <p class="text-center fw-medium text-danger d-none" id="fillMsg"><i class="me-2 fa-solid fa-circle-exclamation"></i>All inputs are required</p>
+        <p class="text-danger d-none" id="wrongMsg">your email or password is incorrect</p>
+        <button onclick="addLogin()" id="loginBtn" class="btn">Login</button>
+        </div>
+      </form>
+    </div>  
+  </div>
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

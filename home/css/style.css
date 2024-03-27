@@ -1,0 +1,23 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'jost',sans-serif;
+    background: linear-gradient(to bottom,#380e34,#771f6e,#b85555);
+}
+.text-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+    height: 300px;
+    background-color: #380e3448;
+    box-shadow: 5px 20px 50px #00000069;
+}
+p{
+    color: white;
+}
